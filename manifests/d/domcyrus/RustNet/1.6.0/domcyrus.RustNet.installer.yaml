@@ -4,6 +4,11 @@ PackageIdentifier: domcyrus.RustNet
 PackageVersion: 1.6.0
 InstallerType: wix
 Scope: machine
+InstallationMetadata:
+  Files:
+  - RelativeFilePath: rustnet.exe
+    FileType: launch
+    InvocationParameter: --version
 Installers:
 - Architecture: x86
   InstallerUrl: https://github.com/domcyrus/rustnet/releases/download/v1.6.0/Rustnet_Windows_32-bit.msi
